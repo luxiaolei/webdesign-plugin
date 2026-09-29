@@ -42,3 +42,11 @@ The helper rejects malformed catalogs and never treats an unverified license as 
 ## Testing
 
 The registry search and plan builder have a small Rust unit-test check. Manual verification should run the helper against the checked-in catalog and inspect the generated JSON. Website projects using the plugin must perform their own local preview, breakpoint, accessibility, and console checks.
+
+## Source gate increment for issue #1
+
+Keep the registry-helper architecture; no hosted builder, runtime dependency or model call is added. Search uses Unicode-aware lexical runs, bounded Han bigrams and optional aliases. Plans require known or explicitly specified target platforms and filter for the intersection before limiting results. No-match does not fall back to an arbitrary catalog subset.
+
+The source catalog adds declared platforms, dependency-inventory status, fixed-revision slot and evidence references. Discovery results preserve metadata; incompatible sources are references_only. None of these metadata assertions produce copy permission. Exact item/revision/license and target/performance/reduced-motion evidence are verified in the consuming project's source ledger. Unknown compatibility fails closed for candidate selection; empty dependencies do not mean none.
+
+Regression evidence covers lexical matching, no match, target intersection/unknowns, rank truncation, metadata non-authority and original four-pass workflow. It does not prove the recommended source compiles, a WeChat device renders correctly, or a website has passed visual or production acceptance.
