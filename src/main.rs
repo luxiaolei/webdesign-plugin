@@ -1,5 +1,5 @@
 use std::path::{Path, PathBuf};
-use webdesign_source_forge::{build_plan, load_catalog, search_sources};
+use webdesign_source_forge::{build_plan, build_plan_for_platforms, load_catalog, search_sources};
 
 fn option(args: &[String], name: &str) -> Option<String> {
     args.windows(2)
@@ -15,7 +15,7 @@ fn catalog_path(args: &[String]) -> PathBuf {
 
 fn usage() -> ! {
     eprintln!(
-        "usage:\n  webdesign-source-forge search <query> [--catalog PATH]\n  webdesign-source-forge plan --brief TEXT --stack STACK --pages home,pricing [--catalog PATH]"
+        "usage:\n  webdesign-source-forge search <query> [--catalog PATH]\n  webdesign-source-forge plan --brief TEXT --stack STACK --pages home,pricing [--platforms web,miniprogram] [--catalog PATH]"
     );
     std::process::exit(2);
 }
@@ -51,8 +51,14 @@ fn main() {
                 .split(',')
                 .map(str::to_string)
                 .collect::<Vec<_>>();
-            serde_json::to_string_pretty(&build_plan(&catalog, &brief, &stack, &pages))
-                .expect("json")
+            let plan = match option(&args, "--platforms") {
+                Some(raw) => {
+                    let platforms = raw.split(',').map(str::to_string).collect::<Vec<_>>();
+                    build_plan_for_platforms(&catalog, &brief, &stack, &pages, &platforms)
+                }
+                None => build_plan(&catalog, &brief, &stack, &pages),
+            };
+            serde_json::to_string_pretty(&plan).expect("json")
         }
         _ => usage(),
     };

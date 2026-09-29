@@ -45,3 +45,18 @@ cargo run -- plan --brief "animated product landing page" --stack react --pages 
 ```
 
 本仓库自己的代码采用 MIT；外部组件、提示词、模板和网站素材仍以各自来源的许可和使用条款为准。
+
+## 中文与跨端来源筛选（#1）
+
+中文检索采用有界汉字二元词与来源别名，不声称理解全部中文语义。无匹配明确返回空/NO_MATCH，不再固定回退五个来源。`search`仅发现来源，不承诺目标适配；`plan`才按目标筛选。
+
+```bash
+cargo run --offline -- search "微信小程序共用点单购物袋"
+cargo run --offline -- plan --brief "微信小程序与员工网页共用点单组件" --stack taro --pages menu,cart,order --platforms miniprogram,web
+```
+
+多目标必须全部在目录声明范围内；未知支持只进入references_only，不进目标组件候选。网页栈默认web，taro/uni-app默认web+miniprogram；未知栈需显式--platforms。build-time工具单独检索/计划，不冒充可嵌入小程序的运行组件。
+
+CANDIDATES_REQUIRE_REVIEW只表示来源匹配。即使目录写MIT或给出证据链接，reuse_allowed_by_this_plan始终false：项目必须逐项核版本/许可、依赖、性能、reduced-motion及真实渲染。空依赖清单是UNKNOWN，不证明零依赖。目标不匹配返回NO_COMPATIBLE_SOURCE，保留灵感参考而不偷换实现。
+
+HZOS先核Odoo原生/配置及现有组件，再薄适配，最后补缺口；Taro/NutUI/tokens仅候选，不要求全部引入。本插件在研发期使用，不进入扫码/支付，不生成线上任意可执行代码，也不提升用户/顾客权限。

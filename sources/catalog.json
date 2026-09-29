@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "checked_at": "2026-09-29",
   "sources": [
     {
@@ -12,13 +12,37 @@
         "endpoint": "https://xgdzyqfalbibzelpdpvr.supabase.co/functions/v1/mcp",
         "install": "claude mcp add motionsites --scope user --transport http https://xgdzyqfalbibzelpdpvr.supabase.co/functions/v1/mcp"
       },
-      "tags": ["prompt", "visual-direction", "landing-page", "mcp", "inspiration"],
-      "capabilities": ["design prompts", "visual references", "direction exploration"],
+      "tags": [
+        "prompt",
+        "visual-direction",
+        "landing-page",
+        "mcp",
+        "inspiration"
+      ],
+      "capabilities": [
+        "design prompts",
+        "visual references",
+        "direction exploration"
+      ],
       "description": "Prompt source for visual direction and landing-page exploration.",
       "license": {
         "status": "account-required",
         "note": "The site advertises three free prompts and paid access to the full library; do not copy prompt text into this repository.",
         "url": "https://motionsites.ai/mcp"
+      },
+      "aliases": [
+        "视觉参考",
+        "网页设计"
+      ],
+      "platforms": [
+        "build-time"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -28,13 +52,39 @@
       "url": "https://reactbits.dev/",
       "github": "https://github.com/DavidHDev/react-bits",
       "docs": "https://reactbits.dev/get-started/introduction",
-      "tags": ["react", "animation", "animated", "background", "micro-interaction", "tailwind"],
-      "capabilities": ["animated components", "backgrounds", "text effects", "source-owned components"],
+      "tags": [
+        "react",
+        "animation",
+        "animated",
+        "background",
+        "micro-interaction",
+        "tailwind"
+      ],
+      "capabilities": [
+        "animated components",
+        "backgrounds",
+        "text effects",
+        "source-owned components"
+      ],
       "description": "Source-owned animated React components that can be copied into a project.",
       "license": {
         "status": "verify-per-item",
         "note": "The site describes source delivery and links a repository license; verify the exact item before redistribution.",
         "url": "https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md"
+      },
+      "aliases": [
+        "网页动效",
+        "背景动效"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -43,13 +93,43 @@
       "kind": "ui-element-library",
       "url": "https://uiverse.io/",
       "github": "https://github.com/uiverse-io/galaxy",
-      "tags": ["css", "tailwind", "react", "ui-element", "open-source", "animation", "anime", "button", "card", "form"],
-      "capabilities": ["copy-paste UI", "tag search", "Figma copy", "micro-interactions"],
+      "tags": [
+        "css",
+        "tailwind",
+        "react",
+        "ui-element",
+        "open-source",
+        "animation",
+        "anime",
+        "button",
+        "card",
+        "form"
+      ],
+      "capabilities": [
+        "copy-paste UI",
+        "tag search",
+        "Figma copy",
+        "micro-interactions"
+      ],
       "description": "Community UI elements for fast exploration of buttons, cards, forms, loaders, and effects.",
       "license": {
         "status": "mit",
         "note": "The site states that UI elements are published under the MIT License; retain attribution where the item requires it.",
         "url": "https://opensource.org/license/mit"
+      },
+      "aliases": [
+        "网页按钮",
+        "卡片表单"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -58,13 +138,36 @@
       "kind": "mcp-adapter",
       "url": "https://github.com/Fabi-SPL/uiverse-mcp",
       "github": "https://github.com/Fabi-SPL/uiverse-mcp",
-      "tags": ["mcp", "uiverse", "search", "component", "agent"],
-      "capabilities": ["browse Uiverse", "search components", "use components from an MCP client"],
+      "tags": [
+        "mcp",
+        "uiverse",
+        "search",
+        "component",
+        "agent"
+      ],
+      "capabilities": [
+        "browse Uiverse",
+        "search components",
+        "use components from an MCP client"
+      ],
       "description": "Community MCP adapter for browsing Uiverse components from coding agents.",
       "license": {
         "status": "verify-repo",
         "note": "Treat this as an optional adapter and inspect the repository license before redistribution.",
         "url": "https://github.com/Fabi-SPL/uiverse-mcp"
+      },
+      "aliases": [
+        "组件检索"
+      ],
+      "platforms": [
+        "build-time"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -74,13 +177,43 @@
       "url": "https://ui.aceternity.com/",
       "docs": "https://ui.aceternity.com/docs/cli",
       "registry": "https://ui.aceternity.com/registry/{name}.json",
-      "tags": ["react", "nextjs", "tailwind", "motion", "3d", "landing-page", "mcp", "blocks", "templates"],
-      "capabilities": ["animated components", "landing blocks", "templates", "shadcn registry", "MCP discovery"],
+      "tags": [
+        "react",
+        "nextjs",
+        "tailwind",
+        "motion",
+        "3d",
+        "landing-page",
+        "mcp",
+        "blocks",
+        "templates"
+      ],
+      "capabilities": [
+        "animated components",
+        "landing blocks",
+        "templates",
+        "shadcn registry",
+        "MCP discovery"
+      ],
       "description": "React and Tailwind components, blocks, and templates with a shadcn registry and MCP path.",
       "license": {
         "status": "mixed",
         "note": "Free components and paid blocks/templates are presented together; verify the selected item and access terms.",
         "url": "https://ui.aceternity.com/docs/cli"
+      },
+      "aliases": [
+        "网页组件",
+        "落地页"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -89,12 +222,39 @@
       "kind": "open-source-builder",
       "url": "https://github.com/buildingopen/openpage",
       "github": "https://github.com/buildingopen/openpage",
-      "tags": ["builder", "json", "visual-editor", "ai-generation", "self-hosted", "react", "export"],
-      "capabilities": ["JSON-first site model", "visual editing", "AI generation", "HTML export"],
+      "tags": [
+        "builder",
+        "json",
+        "visual-editor",
+        "ai-generation",
+        "self-hosted",
+        "react",
+        "export"
+      ],
+      "capabilities": [
+        "JSON-first site model",
+        "visual editing",
+        "AI generation",
+        "HTML export"
+      ],
       "description": "Self-hosted JSON-first builder that keeps visual edits and agent edits in one diffable model.",
       "license": {
         "status": "mit",
         "url": "https://github.com/buildingopen/openpage/blob/master/LICENSE"
+      },
+      "aliases": [
+        "可视化编辑",
+        "网页布局"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -103,12 +263,40 @@
       "kind": "screenshot-to-code",
       "url": "https://github.com/abi/screenshot-to-code",
       "github": "https://github.com/abi/screenshot-to-code",
-      "tags": ["clone", "screenshot", "screen-recording", "url", "react", "vue", "tailwind", "visual-verification"],
-      "capabilities": ["screenshot to code", "Figma to code", "screen recording to prototype", "local preview"],
+      "tags": [
+        "clone",
+        "screenshot",
+        "screen-recording",
+        "url",
+        "react",
+        "vue",
+        "tailwind",
+        "visual-verification"
+      ],
+      "capabilities": [
+        "screenshot to code",
+        "Figma to code",
+        "screen recording to prototype",
+        "local preview"
+      ],
       "description": "Open-source reference for converting screenshots, Figma designs, and recordings into editable code.",
       "license": {
         "status": "mit",
         "url": "https://github.com/abi/screenshot-to-code/blob/main/LICENSE"
+      },
+      "aliases": [
+        "截图转代码",
+        "视觉验证"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -117,13 +305,40 @@
       "kind": "visual-builder",
       "url": "https://github.com/winchxyz/loupe",
       "github": "https://github.com/winchxyz/loupe",
-      "tags": ["builder", "live-render", "element-picker", "accessibility", "responsive", "local", "visual-qa"],
-      "capabilities": ["live render editing", "reference browser", "accessibility pass", "responsive pass"],
+      "tags": [
+        "builder",
+        "live-render",
+        "element-picker",
+        "accessibility",
+        "responsive",
+        "local",
+        "visual-qa"
+      ],
+      "capabilities": [
+        "live render editing",
+        "reference browser",
+        "accessibility pass",
+        "responsive pass"
+      ],
       "description": "Local visual web-design studio focused on seeing rendered changes and verifying them.",
       "license": {
         "status": "mit",
         "note": "The upstream project currently targets Windows; keep it as a reference for the verification loop.",
         "url": "https://github.com/winchxyz/loupe/blob/main/LICENSE"
+      },
+      "aliases": [
+        "响应式检查",
+        "视觉编辑"
+      ],
+      "platforms": [
+        "build-time"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -131,12 +346,33 @@
       "name": "CopyWeb",
       "kind": "clone-service",
       "url": "https://copyweb.ai/",
-      "tags": ["clone", "screenshot", "url", "design-to-code"],
-      "capabilities": ["screenshot to code", "URL-based visual cloning"],
+      "tags": [
+        "clone",
+        "screenshot",
+        "url",
+        "design-to-code"
+      ],
+      "capabilities": [
+        "screenshot to code",
+        "URL-based visual cloning"
+      ],
       "description": "Commercial benchmark for screenshot and URL-based front-end cloning.",
       "license": {
         "status": "commercial",
         "note": "Use for capability comparison, not as a source to redistribute."
+      },
+      "aliases": [
+        "网页参考"
+      ],
+      "platforms": [
+        "build-time"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -144,12 +380,33 @@
       "name": "Clonesite",
       "kind": "clone-service",
       "url": "https://clonesite.ai/",
-      "tags": ["clone", "url", "visual-copy", "front-end"],
-      "capabilities": ["URL to visual copy", "site preview"],
+      "tags": [
+        "clone",
+        "url",
+        "visual-copy",
+        "front-end"
+      ],
+      "capabilities": [
+        "URL to visual copy",
+        "site preview"
+      ],
       "description": "Commercial benchmark for cloning a public website's visual structure from a URL.",
       "license": {
         "status": "commercial",
         "note": "Copy only sites and assets for which the user has permission."
+      },
+      "aliases": [
+        "网页参考"
+      ],
+      "platforms": [
+        "build-time"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -157,12 +414,37 @@
       "name": "Google Design MCP",
       "kind": "design-mcp",
       "url": "https://developers.google.com/design-mcp",
-      "tags": ["mcp", "design-system", "ux", "tokens", "headless", "agent"],
-      "capabilities": ["headless design engine", "UX rules", "design-system bridge"],
+      "tags": [
+        "mcp",
+        "design-system",
+        "ux",
+        "tokens",
+        "headless",
+        "agent"
+      ],
+      "capabilities": [
+        "headless design engine",
+        "UX rules",
+        "design-system bridge"
+      ],
       "description": "Reference for exposing design-system and UX capabilities to agents through MCP.",
       "license": {
         "status": "documentation",
         "url": "https://developers.google.com/design-mcp"
+      },
+      "aliases": [
+        "设计系统",
+        "设计规范"
+      ],
+      "platforms": [
+        "build-time"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
       }
     },
     {
@@ -171,13 +453,147 @@
       "kind": "design-mcp",
       "url": "https://github.com/southleft/design-systems-mcp",
       "github": "https://github.com/southleft/design-systems-mcp",
-      "tags": ["mcp", "design-system", "wcag", "accessibility", "agent-interface"],
-      "capabilities": ["design-system knowledge", "WCAG guidance", "agent-interface references"],
+      "tags": [
+        "mcp",
+        "design-system",
+        "wcag",
+        "accessibility",
+        "agent-interface"
+      ],
+      "capabilities": [
+        "design-system knowledge",
+        "WCAG guidance",
+        "agent-interface references"
+      ],
       "description": "Open-source MCP reference for authoritative design-system and accessibility knowledge.",
       "license": {
         "status": "verify-repo",
         "url": "https://github.com/southleft/design-systems-mcp"
+      },
+      "aliases": [
+        "设计系统",
+        "无障碍"
+      ],
+      "platforms": [
+        "build-time"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
+      }
+    },
+    {
+      "id": "taro",
+      "name": "Taro",
+      "kind": "framework",
+      "url": "https://github.com/NervJS/taro",
+      "github": "https://github.com/NervJS/taro",
+      "tags": [
+        "taro",
+        "react",
+        "framework",
+        "ordering"
+      ],
+      "aliases": [
+        "微信小程序",
+        "共用点单源码",
+        "跨端编译"
+      ],
+      "capabilities": [
+        "candidate discovery for shared ordering workflow"
+      ],
+      "description": "本轮用户确认方案中的候选来源；目标版本、依赖、控件和真实双端能力必须单独核验。",
+      "platforms": [
+        "miniprogram",
+        "web"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
+      },
+      "license": {
+        "status": "verify-repo",
+        "note": "Not a per-item code-copy grant. Verify the exact revision, item and distribution terms."
+      }
+    },
+    {
+      "id": "nutui-react",
+      "name": "NutUI React",
+      "kind": "component-library",
+      "url": "https://github.com/jdf2e/nutui-react",
+      "github": "https://github.com/jdf2e/nutui-react",
+      "tags": [
+        "react",
+        "taro",
+        "component",
+        "ordering"
+      ],
+      "aliases": [
+        "点单组件",
+        "购物袋",
+        "基础控件"
+      ],
+      "capabilities": [
+        "candidate discovery for shared ordering workflow"
+      ],
+      "description": "本轮用户确认方案中的候选来源；目标版本、依赖、控件和真实双端能力必须单独核验。",
+      "platforms": [
+        "miniprogram",
+        "web"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
+      },
+      "license": {
+        "status": "verify-repo",
+        "note": "Not a per-item code-copy grant. Verify the exact revision, item and distribution terms."
+      }
+    },
+    {
+      "id": "style-dictionary",
+      "name": "Style Dictionary",
+      "kind": "build-tool",
+      "url": "https://github.com/style-dictionary/style-dictionary",
+      "github": "https://github.com/style-dictionary/style-dictionary",
+      "tags": [
+        "tokens",
+        "theme",
+        "build-time"
+      ],
+      "aliases": [
+        "设计变量",
+        "主题令牌",
+        "多端样式"
+      ],
+      "capabilities": [
+        "candidate discovery for shared ordering workflow"
+      ],
+      "description": "本轮用户确认方案中的候选来源；目标版本、依赖、控件和真实双端能力必须单独核验。",
+      "platforms": [
+        "build-time"
+      ],
+      "runtime_dependencies": [],
+      "source_revision": null,
+      "verification": {
+        "status": "NOT_VERIFIED_FOR_ORDERING",
+        "dependency_inventory": "UNKNOWN_REQUIRES_ITEM_REVIEW",
+        "target_compatibility": "DECLARED_ONLY"
+      },
+      "license": {
+        "status": "verify-repo",
+        "note": "Not a per-item code-copy grant. Verify the exact revision, item and distribution terms."
       }
     }
-  ]
+  ],
+  "metadata_scope": "DECLARED_DISCOVERY_ONLY_NOT_TARGET_OR_LICENSE_ACCEPTANCE"
 }

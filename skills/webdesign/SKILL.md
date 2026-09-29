@@ -43,3 +43,13 @@ The implementation is ready for review only when the target project contains:
 - a working responsive preview with the requested routes
 
 Keep the contract honest: a plan, a screenshot, or a passing unit check does not prove visual acceptance or deployment.
+
+## Ordering / Chinese multi-target briefs
+
+Use explicit targets with `plan --platforms miniprogram,web` when both WeChat and employee Web are required. `search` is discovery only. Inspect `sources` (declared compatible candidates) separately from `references_only` (inspiration or incompatible/unknown support). NO_MATCH and NO_COMPATIBLE_SOURCE are real gaps; do not turn a web animation into a native component or substitute the first catalog entries.
+
+The lexical matcher uses bounded Chinese bigrams and curated aliases, not semantic understanding. Bind the actual item, commit/package version, license, dependencies, target build, performance, and reduced-motion/static fallback in the project source ledger. Catalog claims and nonempty links are not verified evidence or copy permission; the plan intentionally never grants it.
+
+Prefer existing Odoo/native configuration and accepted project capabilities, then a thin adapter. Reuse the ordering state/contract and components across customer/employee surfaces, but keep platform adapters and current permissions distinct. Do not rewrite mature modules solely for perfect source sharing. Preview three variants on the same task structure before selecting a direction, then verify both actual targets; do not start runtime deployment or install paid/global services as a side effect of source discovery.
+
+Keep original cart/spec/order/payment/refund/invoice identities through theme/layout changes. AI/camera unavailable must retain ordinary menu/service paths; a generic fallback is never a successful transaction. The plugin is a build/design helper, not a production recommendation, identity, permission or hot-code platform.
