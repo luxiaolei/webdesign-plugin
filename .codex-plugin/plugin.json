@@ -1,0 +1,22 @@
+{
+  "name": "webdesign-plugin",
+  "version": "0.1.0",
+  "description": "Evidence-bound visual research and implementation workflow for AI-built websites.",
+  "author": {
+    "name": "Xiaolei Lu"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Webdesign Source Forge",
+    "shortDescription": "Research, reuse, build, and visually verify websites.",
+    "longDescription": "Turns a website brief into a source ledger, visual direction, owned component handoff, and responsive QA checklist.",
+    "developerName": "Xiaolei Lu",
+    "category": "Design",
+    "capabilities": [
+      "visual research",
+      "licensed source reuse",
+      "responsive browser QA"
+    ],
+    "defaultPrompt": "Use the webdesign workflow to turn this brief into a coherent, source-backed website."
+  }
+}

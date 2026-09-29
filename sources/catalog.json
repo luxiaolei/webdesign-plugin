@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-29",
+  "sources": [
+    {
+      "id": "motionsites-mcp",
+      "name": "MotionSites AI MCP",
+      "kind": "prompt-library",
+      "url": "https://motionsites.ai/mcp",
+      "mcp": {
+        "transport": "http",
+        "endpoint": "https://xgdzyqfalbibzelpdpvr.supabase.co/functions/v1/mcp",
+        "install": "claude mcp add motionsites --scope user --transport http https://xgdzyqfalbibzelpdpvr.supabase.co/functions/v1/mcp"
+      },
+      "tags": ["prompt", "visual-direction", "landing-page", "mcp", "inspiration"],
+      "capabilities": ["design prompts", "visual references", "direction exploration"],
+      "description": "Prompt source for visual direction and landing-page exploration.",
+      "license": {
+        "status": "account-required",
+        "note": "The site advertises three free prompts and paid access to the full library; do not copy prompt text into this repository.",
+        "url": "https://motionsites.ai/mcp"
+      }
+    },
+    {
+      "id": "react-bits",
+      "name": "React Bits",
+      "kind": "component-library",
+      "url": "https://reactbits.dev/",
+      "github": "https://github.com/DavidHDev/react-bits",
+      "docs": "https://reactbits.dev/get-started/introduction",
+      "tags": ["react", "animation", "animated", "background", "micro-interaction", "tailwind"],
+      "capabilities": ["animated components", "backgrounds", "text effects", "source-owned components"],
+      "description": "Source-owned animated React components that can be copied into a project.",
+      "license": {
+        "status": "verify-per-item",
+        "note": "The site describes source delivery and links a repository license; verify the exact item before redistribution.",
+        "url": "https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md"
+      }
+    },
+    {
+      "id": "uiverse",
+      "name": "Uiverse",
+      "kind": "ui-element-library",
+      "url": "https://uiverse.io/",
+      "github": "https://github.com/uiverse-io/galaxy",
+      "tags": ["css", "tailwind", "react", "ui-element", "open-source", "animation", "anime", "button", "card", "form"],
+      "capabilities": ["copy-paste UI", "tag search", "Figma copy", "micro-interactions"],
+      "description": "Community UI elements for fast exploration of buttons, cards, forms, loaders, and effects.",
+      "license": {
+        "status": "mit",
+        "note": "The site states that UI elements are published under the MIT License; retain attribution where the item requires it.",
+        "url": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "id": "uiverse-mcp",
+      "name": "Uiverse MCP",
+      "kind": "mcp-adapter",
+      "url": "https://github.com/Fabi-SPL/uiverse-mcp",
+      "github": "https://github.com/Fabi-SPL/uiverse-mcp",
+      "tags": ["mcp", "uiverse", "search", "component", "agent"],
+      "capabilities": ["browse Uiverse", "search components", "use components from an MCP client"],
+      "description": "Community MCP adapter for browsing Uiverse components from coding agents.",
+      "license": {
+        "status": "verify-repo",
+        "note": "Treat this as an optional adapter and inspect the repository license before redistribution.",
+        "url": "https://github.com/Fabi-SPL/uiverse-mcp"
+      }
+    },
+    {
+      "id": "aceternity-ui",
+      "name": "Aceternity UI",
+      "kind": "component-block-library",
+      "url": "https://ui.aceternity.com/",
+      "docs": "https://ui.aceternity.com/docs/cli",
+      "registry": "https://ui.aceternity.com/registry/{name}.json",
+      "tags": ["react", "nextjs", "tailwind", "motion", "3d", "landing-page", "mcp", "blocks", "templates"],
+      "capabilities": ["animated components", "landing blocks", "templates", "shadcn registry", "MCP discovery"],
+      "description": "React and Tailwind components, blocks, and templates with a shadcn registry and MCP path.",
+      "license": {
+        "status": "mixed",
+        "note": "Free components and paid blocks/templates are presented together; verify the selected item and access terms.",
+        "url": "https://ui.aceternity.com/docs/cli"
+      }
+    },
+    {
+      "id": "openpage",
+      "name": "OpenPage",
+      "kind": "open-source-builder",
+      "url": "https://github.com/buildingopen/openpage",
+      "github": "https://github.com/buildingopen/openpage",
+      "tags": ["builder", "json", "visual-editor", "ai-generation", "self-hosted", "react", "export"],
+      "capabilities": ["JSON-first site model", "visual editing", "AI generation", "HTML export"],
+      "description": "Self-hosted JSON-first builder that keeps visual edits and agent edits in one diffable model.",
+      "license": {
+        "status": "mit",
+        "url": "https://github.com/buildingopen/openpage/blob/master/LICENSE"
+      }
+    },
+    {
+      "id": "screenshot-to-code",
+      "name": "Screenshot to Code",
+      "kind": "screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "github": "https://github.com/abi/screenshot-to-code",
+      "tags": ["clone", "screenshot", "screen-recording", "url", "react", "vue", "tailwind", "visual-verification"],
+      "capabilities": ["screenshot to code", "Figma to code", "screen recording to prototype", "local preview"],
+      "description": "Open-source reference for converting screenshots, Figma designs, and recordings into editable code.",
+      "license": {
+        "status": "mit",
+        "url": "https://github.com/abi/screenshot-to-code/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "loupe",
+      "name": "Loupe",
+      "kind": "visual-builder",
+      "url": "https://github.com/winchxyz/loupe",
+      "github": "https://github.com/winchxyz/loupe",
+      "tags": ["builder", "live-render", "element-picker", "accessibility", "responsive", "local", "visual-qa"],
+      "capabilities": ["live render editing", "reference browser", "accessibility pass", "responsive pass"],
+      "description": "Local visual web-design studio focused on seeing rendered changes and verifying them.",
+      "license": {
+        "status": "mit",
+        "note": "The upstream project currently targets Windows; keep it as a reference for the verification loop.",
+        "url": "https://github.com/winchxyz/loupe/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "copyweb",
+      "name": "CopyWeb",
+      "kind": "clone-service",
+      "url": "https://copyweb.ai/",
+      "tags": ["clone", "screenshot", "url", "design-to-code"],
+      "capabilities": ["screenshot to code", "URL-based visual cloning"],
+      "description": "Commercial benchmark for screenshot and URL-based front-end cloning.",
+      "license": {
+        "status": "commercial",
+        "note": "Use for capability comparison, not as a source to redistribute."
+      }
+    },
+    {
+      "id": "clonesite",
+      "name": "Clonesite",
+      "kind": "clone-service",
+      "url": "https://clonesite.ai/",
+      "tags": ["clone", "url", "visual-copy", "front-end"],
+      "capabilities": ["URL to visual copy", "site preview"],
+      "description": "Commercial benchmark for cloning a public website's visual structure from a URL.",
+      "license": {
+        "status": "commercial",
+        "note": "Copy only sites and assets for which the user has permission."
+      }
+    },
+    {
+      "id": "google-design-mcp",
+      "name": "Google Design MCP",
+      "kind": "design-mcp",
+      "url": "https://developers.google.com/design-mcp",
+      "tags": ["mcp", "design-system", "ux", "tokens", "headless", "agent"],
+      "capabilities": ["headless design engine", "UX rules", "design-system bridge"],
+      "description": "Reference for exposing design-system and UX capabilities to agents through MCP.",
+      "license": {
+        "status": "documentation",
+        "url": "https://developers.google.com/design-mcp"
+      }
+    },
+    {
+      "id": "design-systems-mcp",
+      "name": "Design Systems MCP",
+      "kind": "design-mcp",
+      "url": "https://github.com/southleft/design-systems-mcp",
+      "github": "https://github.com/southleft/design-systems-mcp",
+      "tags": ["mcp", "design-system", "wcag", "accessibility", "agent-interface"],
+      "capabilities": ["design-system knowledge", "WCAG guidance", "agent-interface references"],
+      "description": "Open-source MCP reference for authoritative design-system and accessibility knowledge.",
+      "license": {
+        "status": "verify-repo",
+        "url": "https://github.com/southleft/design-systems-mcp"
+      }
+    }
+  ]
+}
